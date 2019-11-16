@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       
+        function hitungVoucher(a, uang) {
+            if (a === "DumbWaysAsik") {
+                if (uang >= 20000) {
+                    diskon = (uang * 50) / 100
+                    if (diskon > 20000) {
+                        bayarUang = uang
+                        kembalian = 0
+                        diskon = 0
+                    }
+                    else {
+                        bayarUang = uang - diskon
+                        kembalian = uang - bayarUang
+                    }
+
+                }
+                else {
+                    bayarUang = 0
+                    diskon = 0
+                    kembalian = uang - bayarUang
+                }
+            }
+
+            else if (a === "DumbWaysMantap") {
+                if (uang >= 50000) {
+                    diskon = (uang * 30) / 100
+                    if (diskon > 40000) {
+                        bayarUang = uang
+                        kembalian = 0
+                        diskon = 0
+                    }
+                    else {
+                        bayarUang = uang - diskon
+                        kembalian = uang - bayarUang
+                    }
+
+                }
+                else {
+                    diskon = 0
+                    bayaruang = uang
+                    kembalian = 0
+
+                }
+
+                return document.write("Uang yang harus dibayar : " + bayarUang + "<br>"
+                    + "Diskon : " + diskon + "<br>" + "Kembalian : " + kembalian + "<br>")
+
+            }}
+
+
+    </script>
+
+</body>
+
+</html>

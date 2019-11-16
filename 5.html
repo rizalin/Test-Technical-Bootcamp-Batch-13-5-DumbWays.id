@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function generate(n) {
+          
+
+            for (i = 1; i <= n; i++) {
+                var charset = "1234567890qwertyuiopasdfghjklzxcvbnm"
+                var text = ""
+                for (j = 1; j <= 19; j++) {
+                    if (j % 5 == 0) {
+                        text += "-"
+                    }
+                    else { text += charset.charAt(Math.random() * charset.length) }
+
+                }
+                document.write(text + "<br>")
+
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
