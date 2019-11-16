@@ -24,3 +24,8 @@ Jawaban untuk Test technical dumbways batch 13 kloter 5
  #Soal no 6
  - Bahasa : Javascript
  - Gunakan es6console.com untuk mencoba kode
+ 
+ #Soal no 7
+ - Bahasa : Php, Mysql
+ - Setengah jadi, query berbentuk foto
+ 
