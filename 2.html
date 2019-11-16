@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function hitungKembalian(harga, uang) {
+            let returnValue = uang - harga;
+            let kembalian = {};
+
+            let pecahanUang = [50000, 20000, 10000, 5000, 2000, 1000, 500];
+            let uangKembalian = ["50 ribu", "20 ribu", "10 ribu", "5 ribu", "2 ribu", "seribu", "5 ratus"];
+
+
+            var jumlah;
+
+            for (var i = 0; i < pecahanUang.length; i++) {
+                jumlah = Math.floor(returnValue / pecahanUang[i]);
+                if (jumlah > 0) {
+                    kembalian[uangKembalian[i]] = jumlah;
+                    returnValue = returnValue % pecahanUang[i];
+                }
+            }
+
+            return kembalian;
+        }
+
+        console.log(hitungKembalian(110500, 200000));
+        
+
+    </script>
+
+</body>
+
+</html>

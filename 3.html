@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = prompt("Masukan angka")
+        function cetak_gambar(n) {
+            for (i = 1; i <= n; i++) {
+                if (i % 2 == 1) {
+                    for (j = 1; j <= n; j++) {
+                        if (j%3 == 0) {
+                            document.write("=")
+                        }
+                        
+                        else if (j % 2 == 1) {
+                            document.write("=")
+                        }
+                        else {
+                            document.write("*")
+                        }
+                        document.write("&nbsp")
+
+                    }
+
+
+
+
+                }
+                else {
+                    for (j = 1; j <= n; j++) {
+                        if (j%3 == 0) {
+                            document.write("=")
+                        }
+                        
+                        else if (j % 2 == 0) {
+                            document.write("=")
+                        }
+                        else {
+                            document.write("*")
+                        }
+                        document.write("&nbsp")
+                    }
+
+                }
+                document.write("<br>")
+            }
+        }
+        
+
+    </script>
+    <button onclick="cetak_gambar(n)">Click me </button>
+</body>
+
+</html>

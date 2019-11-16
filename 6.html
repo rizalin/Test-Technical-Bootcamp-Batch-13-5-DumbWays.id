@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var datalain = [["g", "h", "i", "j"],
+        ["a", "c", "b", "e", "d"],
+        ["g", "e", "f"]]
+
+        var data = [
+            ["a", "c", "d", "e", "d"],
+            ["g", "e", "f"]
+        ]
+
+        function sort_array(n) {
+            
+          var data3 = n.map(function(x){
+              return x.sort()
+          })
+
+
+
+            return data3.sort(function (a, b) {
+               
+
+                return a.length - b.length;
+
+            })
+        }
+       
+        console.log(sort_array(data))
+
+    </script>
+</body>
+
+</html>

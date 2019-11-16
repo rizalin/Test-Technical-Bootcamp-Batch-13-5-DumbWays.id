@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+        var input = [1, 2, 3, 4, 5];
+        
+        
+
+
+        function myFunction() {
+            let hasil1 = []
+            
+
+            for (i = 0; i < input.length; i++) {
+                let mySplice = [...input]
+                mySplice.splice(i, 1);
+                hasil = mySplice.reduce((a, b) => a + b, 0);
+                hasil1[i] = hasil 
+
+                
+
+            }
+            var minMax = hasil1.reduce(function(a,b){
+                a[0] = (!a[0])? b : Math.max(a[0], b);
+                a[1] = (!a[1])? b : Math.min(a[1], b);
+                return a;
+            }, [])
+            return minMax
+
+
+        }
+
+        document.write(myFunction())
+
+    </script>
+
+</body>
+
+</html>
